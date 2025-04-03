@@ -22,7 +22,7 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: mvn -B package --file apirest/pom.xml
+        run: mvn -B package --file pom.xml
 
       - name: Upload Surefire Test Reports
         if: failure()
